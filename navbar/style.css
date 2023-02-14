@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ 
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(whale.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul{
+    padding: 40px; 
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li{
+   font-style: none;
+   margin-right: 100px;
+}
+
+nav a{
+    font-size: 30px;
+    color: gold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.1s ease;
+ }
+
+nav a:hover {
+   color: white; 
+}
+
+.intro-text{
+position: absolute;
+right: 0; 
+float: right;
+margin-top: 250px; 
+margin-right: 60px;
+}
+
+h3{
+    font-family: solid;
+    font-size: 40px;
+    color: rgb(81, 76, 76);
+    cursor: pointer;
+    transition: color 1s ease;
+}
+h3:hover{
+color: black;
+}
+
+img{
+    position: absolute;
+    left: 0;
+    float: left; 
+    margin-left: 100px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+
+}
+img:hover{
+    transform: rotate(45deg);
+}
+
+.btn{
+    position: absolute;
+    right: 0; 
+    float: right;
+    margin-top: 410px; 
+    margin-right: 510px;
+    padding: 10px 20px;
+}
+
+.btn{
+    color: #FFF; 
+    background-color: rgb(227, 9, 9);
+    border-radius: 26px;
+    font-family: solid;
+    font-size: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.btn:hover{
+     transform: scale(1.1);
+}
+
+.btn a{
+    color: white;
+    text-decoration: none;  
+}
+
+/* responsive page */ 
+
+@media (max-width: 1077px) {
+img{
+    display: none;
+}
+} 
+
+@media(max-width:701px){
+    nav li{
+        margin-right: 30px; 
+    }
+}
